@@ -69,23 +69,6 @@ h2 {
     position: relative;
 }
 
-:root {
-    --underline_color: red;
-    --underline-hight: 0.175rem;
-}
-
-.Hover-effect::after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: var(--underline-hight);
-    background-color: var(--underline_color);
-    left: 0;
-    bottom: 0;
-    transform: scale(0, 1);
-    transition: transform 0.3s ease;
-}
-
 .Hover-effect:hover::after {
     transform: scale(1, 1);
 }
@@ -126,6 +109,7 @@ h2 {
     margin-bottom: 69px;
     padding: 0 1rem;
     padding-top: 92px;
+    background-color: #393636;
 }
 
 .news {
@@ -137,16 +121,17 @@ h2 {
 .news-box {
     transition: all 0.3s;
     text-decoration: none;
-    color: rgb(29, 25, 25);
-    background-color: white;
+    color: #ffffff;
+    background-color: #393636;
     padding: 20px;
+    border: 1px solid #fff;
 }
 
 .news-box:hover {
     text-decoration: none;
-    color: rgb(29, 25, 25);
+    color: #fff;
     ;
-    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.16), 0 3px 3px rgba(0, 0, 0, 0.23);
+    box-shadow: 0 3px 3px #fff, 0 3px 3px #fff;
 }
 
 .searc-bar {
@@ -160,40 +145,12 @@ h2 {
     position: relative;
 }
 
-:root {
-    --underline_color: red;
-    --underline-hight: 0.175rem;
-}
-
-.Hover-effect::after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: var(--underline-hight);
-    background-color: var(--underline_color);
-    left: 0;
-    bottom: 0;
-    transform: scale(0, 1);
-    transition: transform 0.3s ease;
-}
-
 .Hover-effect:hover::after {
     transform: scale(1, 1);
 }
 
 
 /*other*/
-
-
-/* CSS used here will be applied after bootstrap.css */
-
-
-/* CSS used here will be applied after bootstrap.css */
-
-
-/*
- * Sidebar (add to your bootstrap)
- */
 
 .sidebar-form {
     padding: 7px 15px 13px 15px;
@@ -302,11 +259,23 @@ h2 {
 #navbar-black.navbar-default .navbar-nav>li>a,
 #navbar-black.navbar-default .navbar-nav>li>ul>li>a,
 #navbar-black.navbar-default .navbar-brand {
-    color: #999999;
+    color: #fff;
+    font-size: medium;
 }
 
 #navbar-black.navbar-default .navbar-toggle .icon-bar,
 #navbar-black.navbar-default .navbar-toggle:hover .icon-bar,
 #navbar-black.navbar-default .navbar-toggle:focus .icon-bar {
     background-color: #ffffff;
+}
+
+.sidebar-nav .navbar li a {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    color: #fff;
+    text-decoration: none
+}
+
+.form-control {
+    border-color: rgb(22, 157, 190);
 }
