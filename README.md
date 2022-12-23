@@ -13,3 +13,17 @@ $ npm start
 $ node app.js
 </code></pre></div>
 
+
+# Screenshots
+### home
+![News media website ](Screenshot%20(1).png );
+
+### news/business
+![News media website business ](Screenshot%20(2).png );
+
+### news/technology
+![News media website technlogy ](Screenshot%20(3).png );
+
+
+### search/apple
+![News media website search apple ](Screenshot%20(4).png );
